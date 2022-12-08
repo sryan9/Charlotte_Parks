@@ -171,7 +171,7 @@
   //    $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
 //  }
 
-  var  parks = L.geoJson.ajax("assets/Parks.geojson",{
+  var  parks = L.geoJson.ajax("Assets/Parks.geojson",{
 
     // assign a function to the onEachFeature parameter of the airbnb_listings object.
     // Then each (point) feature will have a popup window.
@@ -226,7 +226,7 @@
 
 
   // 8. Add county polygons
-var neigh =  L.geoJson.ajax("assets/Charlotte.geojson",{
+var neigh =  L.geoJson.ajax("Assets/Charlotte.geojson",{
     onEachFeature: function (feature, layer) {
        layer.bindTooltip('<b>Income: </b>' + feature.properties.Income + '<BR>' + '<b>Race: </b>' +
        feature.properties.Race + '<BR>' +'<b> Deaths/1,000 People: </b>' + feature.properties.Deaths + '');
